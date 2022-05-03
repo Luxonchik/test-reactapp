@@ -1,0 +1,86 @@
+@import '/styles/_var';
+
+.menu {
+
+}
+
+.firstLevel {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 20px; 
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+
+
+}
+
+// .firstLevelActive,
+// .firstLevel::hover {
+//     color: $primary;
+
+// } 
+
+// .firstLevelActive svg,
+// .firstLevel::hover svg {
+//     fill: $primary;
+// }
+
+.firstLevelActive {
+    color: $primary;
+    svg {
+        fill: $primary;
+    }
+}
+
+.firstLevel {
+    &:hover {
+        color: $primary;
+    }
+    svg:hover {
+        fill: $primary
+    }
+}
+
+.secondLevel {
+    margin-bottom: 10px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    color: $gray-dark;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.secondBlock {
+    margin-left: 12px;
+    padding-left: 32px;
+    margin-top: 15px;
+
+    border-left: 1px solid #DFDFDF;
+}
+
+.secondLevelBlockOpened:last-child {
+    margin-bottom: 20px;
+}
+
+.thirdLevel {
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+
+    color: $gray-dark;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.thirdLevelActive,
+.thirdLevel:hover {
+    color: $primary;
+
+}

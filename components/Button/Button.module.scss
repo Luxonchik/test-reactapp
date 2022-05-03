@@ -1,0 +1,55 @@
+@import '/styles/var';
+
+.button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+
+    font-size: 14px;
+    transition: all 0.2s;
+
+}
+
+.primary {
+    color: $white;
+    background-color: $primary;
+    &:hover {
+        background-color: $primary-hover;
+    }
+    svg {
+        fill: $white
+    }
+}
+
+.ghost {
+    color: $black;
+    background: none;
+    border: 1px solid $gray-light;
+    &:hover {
+        background-color: $primary;
+        color: white;
+        svg {
+            fill: $white
+        }
+    }
+    
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.down {
+    display: inline-block;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    transition: all 0.2s;
+}    

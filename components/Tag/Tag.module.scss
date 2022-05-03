@@ -1,0 +1,54 @@
+@import '/styles/_var';
+
+.tag {
+    display: inline-block;
+
+    box-sizing: border-box;
+    margin-right: 5px;
+    border-radius: 20px;
+
+}
+
+.sm {
+    padding: 5px 10px;
+
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.md {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.ghost {
+    border: 1px solid $gray-light
+}
+
+.red {
+    color:white;
+    font-weight: 600;
+    background: #DE0000; 
+}
+
+
+.gray {
+    color:white;
+    font-weight: 600;
+    background: #B3C0D9; 
+}
+
+
+.green {
+    color:$green;
+    font-weight: 600;
+    background: $green-light; 
+}
+
+.primary {
+    color:$primary;
+    font-weight: 600;
+    border: 1px solid $primary;
+    background: none; 
+}

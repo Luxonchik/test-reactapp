@@ -1,0 +1,28 @@
+@import '/styles/_var';
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px 40px;
+        
+
+
+
+    line-height: 24px;
+    font-size: 16px;
+    color: $white;
+    background: $primary;
+    padding: 25px 30px;
+
+    a {
+        &:hover {
+            color: $gray-light;
+        }
+    }
+}
+
+@media (max-width:765px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
